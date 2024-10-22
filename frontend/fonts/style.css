@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Circe Rounded Regular 3';
+    src: local('Circe Rounded Regular3'), local('Circe-Rounded-Regular3'),
+        url('CirceRounded-Regular3.woff2') format('woff2'),
+        url('CirceRounded-Regular3.woff') format('woff'),
+        url('CirceRounded-Regular3.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Circe Rounded Regular 4';
+    src: local('Circe Rounded Regular4'), local('Circe-Rounded-Regular4'),
+        url('CirceRounded-Regular4.woff2') format('woff2'),
+        url('CirceRounded-Regular4.woff') format('woff'),
+        url('CirceRounded-Regular4.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Circe Rounded Regular 5';
+    src: local('Circe Rounded Regular5'), local('Circe-Rounded-Regular5'),
+        url('CirceRounded-Regular5.woff2') format('woff2'),
+        url('CirceRounded-Regular5.woff') format('woff'),
+        url('CirceRounded-Regular5.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

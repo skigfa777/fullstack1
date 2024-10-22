@@ -1,0 +1,337 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Circe Rounded Regular 4', Arial;
+  color: #232323;
+}
+body {
+  padding-top: 30px;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+.title {
+  color: #03417F;
+  font-size: 40px;
+  padding: 0;
+  margin: 0 0 25px;
+  line-height: 1.3;
+}
+.sect {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+
+.popular .slick-track {
+  display: flex !important;
+}
+.popular .slick-slide {
+  margin: 0 15px;
+  position: relative;
+}
+.slick-carousel {
+  position: relative;
+}
+.slick-arrow  {
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+  cursor: pointer;
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 40px;
+  width: 24px;
+  border: none;
+  background: transparent url("../images/arrow_left.svg") no-repeat;
+}
+.slick-prev {
+  left: 20px;
+}
+.slick-next {
+  right: 20px;
+  transform: rotate(-180deg);
+}
+.popular .card:not(:hover,.hover) {
+  min-height: 440px !important;
+}
+.popular .card.hover,
+.popular .card:hover {
+  height: 596px;
+  margin-bottom: -156px;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .19);
+}
+.card {
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  padding: 20px 25px 30px;
+  margin: 0 30px 0 0;
+  text-decoration: none;
+  color: #232323;
+  position: relative;
+}
+  .card img {
+    pointer-events: none;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .card a {
+    text-decoration: none;
+    color: #232323;
+  }
+  .card__buy {
+    cursor: pointer;
+    border: none;
+    background-color: #FF5000;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 60px;
+  }
+  .card__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+    .card__top_compare {
+      height: 24px;
+      width: 24px;
+      display: block;
+      cursor: pointer;
+      background: url("../images/compare.svg") no-repeat;
+    }
+    .card__top_favour {
+      height: 24px;
+      width: 24px;
+      display: block;
+      cursor: pointer;
+      background: url("../images/heart.svg") no-repeat;
+    }
+    .card__top_favour--active {
+      background: url("../images/heart--active.svg") no-repeat;
+    }
+  .card__top_col {
+    display: flex;
+    gap: 7px;   
+  }
+    .card__top_tag {
+      display: flex;
+      gap: 10px;
+      color: #FFFFFF;
+      border-radius: 15px;
+      padding: 6px 12px;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: 'Circe Rounded Regular 3', Arial;
+      line-height: 1;
+    }
+    .card__top_tag--discount {
+      background-color: #FF5000;
+    }
+    .card__top_tag--week {
+      background-color: #0B61B7;
+    }
+    .card__top_tag--sale {
+      background-color: #FFC800;
+    }
+    .card__top_tag--prepurchase {
+      background-color: #9D9DA3;
+    }
+    .card__top_tag--new {
+      background-color: #00C3FF;
+    }
+  .card__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .card__title {
+    font-size: 18px;
+  }
+  .card__bottom {
+    position: absolute;
+    bottom: 25px;
+    padding-top: 25px;
+    padding-right: 50px;
+    width: 100%;
+  }
+  .card__bottom_info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card__bottom_hidden {
+    padding-top: 25px;
+    display: none;
+    opacity: 0;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  @media(max-width:992px) {
+    .popular .card {
+      height: 596px;
+    }
+    .card__bottom_hidden {
+      display: flex;
+      opacity: 1;
+    }
+  }
+  .card.hover .card__bottom_hidden,
+  .card:hover .card__bottom_hidden {
+    display: flex;
+    opacity: 1;
+  }
+    .card__bottom_price {
+      font-size: 24px;
+      color: #0B61B7;
+    }
+    .card__bottom_price--discount {
+      font-size: 15px;
+      color: #9D9DA3;
+      text-decoration: line-through;
+    }
+    .card__bottom_rating {
+      font-size: 18px;
+      color: #9D9DA3;
+      display: flex;
+      align-items: center;
+    }
+    .card__bottom_rating--star {
+      height: 24px;
+      width: 24px;
+      display: block;
+      background: url("../images/star.svg") no-repeat;
+    }
+
+.popular {
+  background: bottom #FFFFFF url("../images/waves.png") repeat-x;
+  padding-bottom: 50px;
+}
+  .popular__carousel .slick-list {
+    margin-bottom: -180px;
+    padding-bottom: 240px;
+  }
+  .popular__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+    .popular__title .title {
+      margin: 0;
+      padding-left: 0;
+    }
+    .popular__title_col--links {
+      display: flex;
+      gap: 20px;
+    }
+      .popular__title_link {
+        color: #9D9DA3;
+        font-size: 20px;
+        text-decoration: none;
+        transition: 0.2s;
+      }
+      .popular__title_link:hover {
+        color: #0B61B7;
+      }
+      .popular__title_link--active {
+        color: #0B61B7;
+        border-bottom: solid 2px #0B61B7;
+      }
+
+.why__block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 25px;
+  background: #EAF4FE url("../images/bg.jpg");
+}
+    .why__tags_tag {
+      display: inline-block;
+      min-height: 44px;
+      margin: 0 10px 10px 0;
+      font-size: 18px;
+      color: #03417F;
+      background-color: #D4E5F6;
+      border-radius: 25px;
+      text-decoration: none;
+      padding: 10px 30px;
+      transition: 0.5s;
+    }
+    .why__tags_tag:hover,
+    .why__tags_tag--active {
+      color: #FFFFFF;
+      background-color: #0B61B7;
+    }
+  .why__text {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-family: 'Circe Rounded Regular 5', Arial;
+    font-size: 18px;
+  }
+    .why__text_col--vector {
+      display: none;
+    }
+    .why__text--b {
+      color: #03417F;
+      font-family: 'Circe Rounded Regular 4', Arial;
+      font-size: 26px;
+    }
+
+@media(min-width:992px) {
+  body {
+    padding-top: 80px;
+  }
+  .title { 
+    font-size: 40px;
+    margin-bottom: 45px;
+    padding-left: 120px;
+  }
+  .sect {
+    padding: 0;
+    margin-bottom: 75px;
+  }
+  .popular__carousel {
+    padding: 0 55px;
+  }
+  .why__block {
+    display: grid;
+    grid-template-columns: 0.95fr 1fr;
+    gap: 10px;
+    padding: 70px 55px;
+  }
+    .why__text_col--vector {
+      display: block;
+      position: relative;
+      left: -10px;
+      top: -15%;
+    }
+}
+
+.select {
+  appearance:none;
+  padding: 0 24px;
+  background: #F4F4F4 right 24px center url("../images/arrow_down.svg") no-repeat;
+  border: none;
+  border-radius: 55px;
+  min-height: 46px;
+  width: 100%;
+  font-family: 'Circe Rounded Regular 5', Arial;
+  font-size: 15px;
+}
